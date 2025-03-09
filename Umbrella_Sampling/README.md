@@ -30,7 +30,7 @@ Each window underwent the following steps:
 - **Heating**: Conducted in the NVT ensemble at **310 K**, with strong harmonic restraints on Cα atoms.
 - **Equilibration**: Performed in the NPT ensemble at **310 K**, with strong harmonic restraints on Cα atoms.
 - **Production**:
-  - The COM distance between R1 and R2 was used as the reaction coordinate.
+  - The COM distance between R1 and R2 along the X-axis was used as the reaction coordinate.
   - A harmonic restraint of **10 kcal/mol/Å²** was applied at the COM distance of each window.
   - Simulation output was stored every **500 steps**.
 
