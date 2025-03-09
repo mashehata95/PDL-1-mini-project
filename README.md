@@ -51,6 +51,6 @@ This repository contains:
 For detailed instructions, refer to the documentation in the respective notebooks.
 
 ## Contact
-For questions or collaborations, feel free to reach out to **Moustafa A. Shehata**.
+For questions or collaborations, feel free to reach out to **mashehata95@gmail.com**.
 
 
