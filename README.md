@@ -9,14 +9,14 @@ This mini-project focuses on leveraging computational protein design techniques 
 This project follows a structured computational pipeline:
 
 1. **Acquisition of Experimental Structures**
-   - Obtain the experimentally resolved structures of Atezolizumab-PD-L1 and Durvalumab-PD-L1 from the Protein Data Bank (PDB).
+   - Obtain the experimentally resolved structures of Atezolizumab-PD-L1 (PDB ID 5X8L) and Durvalumab-PD-L1 (PDB ID 5X8M) from the Protein Data Bank (PDB).
 
 2. **Structure Processing & Preparation for MD Simulations**
    - Preprocess the structures by removing irrelevant components (e.g., solvent, ions) and optimizing for molecular dynamics (MD) simulations.
    - Generate topology and parameter files.
 
 3. **100 Nanoseconds MD Simulations**
-   - Perform classical MD simulations to study the conformational flexibility and interaction dynamics of the PD-L1-antibody complexes.
+   - Perform classical MD simulations to study the conformational flexibility and interaction dynamics of the PD-L1-antibody complexes using OpenMM.
 
 4. **Protein Interaction Fingerprint (PIF) Analysis**
    - Identify key residues at the PD-L1 interface involved in critical interactions.
