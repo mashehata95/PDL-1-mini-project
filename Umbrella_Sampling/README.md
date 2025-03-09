@@ -13,7 +13,7 @@ This protocol describes the steps to perform Umbrella Sampling to study the bind
 - The topology, coordinates, and solvated PDB files were generated using `tleap`.
 - The system was solvated in a water box with dimensions of **60 x 20 x 20** Å to ensure sufficient space for the steering process.
 - The system was shifted backwards along the X-axis direction to provide space for the protein binder steering process
-- ![Umbrella Sampling Diagram](coordinates_optimization.png)
+- ![Umbrella Sampling Diagram](./coordinates_optimization.jpg)
 
 ## 2. Steered Molecular Dynamics (SMD) Simulation
 - A steered MD simulation was performed to separate the binder from the PDL1 protein.
