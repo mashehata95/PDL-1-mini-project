@@ -19,7 +19,7 @@ This project follows a structured computational pipeline:
    - Perform classical MD simulations to study the conformational flexibility and interaction dynamics of the PD-L1-antibody complexes using OpenMM.
 
 4. **Protein Interaction Fingerprint (PIF) Analysis**
-   - Identify key residues at the PD-L1 interface involved in critical interactions.
+   - Identify key residues at the PD-L1 interface involved in critical interactions with Atezolizumab and Durvalumab.
    - Define target hotspots for designing novel protein binders.
 
 5. **RFdiffusion-based Protein Binder Design**
