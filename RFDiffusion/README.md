@@ -1,2 +1,2 @@
 
-![Umbrella Sampling Diagram](./design4.jpg)
+![Umbrella Sampling Diagram](design4.png)
