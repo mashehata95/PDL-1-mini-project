@@ -1,0 +1,2 @@
+python OpenMM.py -p protein.prmtop -c protein.inpcrd -s protein_WAT.pdb -nvt 1.0 -npt 3.0 -prod 10 -st 10 -t 310 -o 5x8m/ -gpuID 0
+python OpenMM.py -p protein.prmtop -c protein.inpcrd -s protein_WAT.pdb -nvt 1.0 -npt 3.0 -prod 10 -st 10 -t 310 -o 5x8l/ -gpuID 1
