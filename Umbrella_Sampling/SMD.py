@@ -65,8 +65,8 @@ def Equilibration():
   integrator = LangevinIntegrator(float(args.temperature) * kelvin, 1.0/picosecond, 0.002*picoseconds)
   pdb = PDBFile("em.pdb")
   
-  # Applying harmonic position restraint on Ca atoms and Carbohydrate molecules
-  print("\t- Applying position restrain on protein Ca atoms and Carbohydrate molecules...")
+  # Applying harmonic position restraint on Ca atoms
+  print("\t- Applying position restrain on protein Ca atoms")
   restraint = CustomExternalForce('k*periodicdistance(x, y, z, x0, y0, z0)^2')
   restraint.addGlobalParameter('k', 50.0 * kilocalories_per_mole / nanometers**2)
   restraint.addPerParticleParameter('x0')
