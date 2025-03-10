@@ -52,12 +52,11 @@ def Heating():
     system = prmtop.createSystem(nonbondedMethod=PME, nonbondedCutoff=1.0*nanometers, constraints=HBonds, removeCMMotion=True, rigidWater=False)  
     integrator = LangevinIntegrator(float(args.temperature)*kelvin, 1.0/picosecond, 0.002*picoseconds)
     
-    # Applying position restraint on Ca atoms and ligand heavy atoms
-    print("\t- Applying position restrain on protein Ca atoms and Glycans...")
-    pt_system = pt.iterload("../protein.inpcrd", "../protein.prmtop")
+    # Applying position restraint on Ca atoms
+    pt_system = pt.iterload(args.coordinate, args.topology)
     pt_topology = pt_system.top
-    # Applying harmonic position restraint on Ca atoms and Carbohydrate molecules
-    print("\t- Applying position restrain on protein Ca atoms and Carbohydrate molecules...")
+    # Applying harmonic position restraint on Ca atoms
+    print("\t- Applying position restrain on protein Ca atoms")
     restraint = CustomExternalForce('k*periodicdistance(x, y, z, x0, y0, z0)^2')
     restraint.addGlobalParameter('k', 50.0 * kilocalories_per_mole / nanometers**2)
     restraint.addPerParticleParameter('x0')
@@ -105,12 +104,11 @@ def Equilibration():
     integrator = LangevinIntegrator(float(args.temperature)*kelvin, 1.0/picosecond, 0.002*picoseconds)
     pdb = PDBFile("heating.pdb")
   
-    # Applying position restraint on Ca atoms and ligand heavy atoms
-    print("\t- Applying position restrain on protein Ca atoms and Glycans...")
-    pt_system = pt.iterload("../protein.inpcrd", "../protein.prmtop")
+    # Applying position restraint on Ca atoms
+    pt_system = pt.iterload(args.coordinate, args.topology)
     pt_topology = pt_system.top
-    # Applying harmonic position restraint on Ca atoms and Carbohydrate molecules
-    print("\t- Applying position restrain on protein Ca atoms and Carbohydrate molecules...")
+    # Applying harmonic position restraint on Ca atoms
+    print("\t- Applying position restrain on protein Ca atoms")
     restraint = CustomExternalForce('k*periodicdistance(x, y, z, x0, y0, z0)^2')
     restraint.addGlobalParameter('k', 50.0 * kilocalories_per_mole / nanometers**2)
     restraint.addPerParticleParameter('x0')
