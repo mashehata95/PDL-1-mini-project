@@ -35,6 +35,7 @@ Each window underwent the following steps:
   - The COM distance between R1 and R2 along the X-axis was used as the reaction coordinate.
   - A harmonic restraint of **10 kcal/mol/Å²** was applied at the COM distance of each window.
   - Simulation output was stored every **500 steps**.
+![COM_histogram](./CV_timeseries_histogram.png)
 
 ## 5. Free Energy Analysis
 - The Weighted Histogram Analysis Method (WHAM) was used to construct the **Potential of Mean Force (PMF) profile**.
