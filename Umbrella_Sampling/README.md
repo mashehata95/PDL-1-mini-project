@@ -35,6 +35,8 @@ Each window underwent the following steps:
   - The COM distance between R1 and R2 along the X-axis was used as the reaction coordinate.
   - A harmonic restraint of **10 kcal/mol/Å²** was applied at the COM distance of each window.
   - Simulation output was stored every **500 steps**.
+
+The histogram illustrates the distribution of center-of-mass (COM) distances between PDL-1 and protein binder sampled acquired from umbrella sampling simulation. The overlap between different windows appears sufficient, as multiple distributions contribute to each region of the reaction coordinate.
 ![COM_histogram](./CV_timeseries_histogram.png)
 
 ## 5. Free Energy Analysis
