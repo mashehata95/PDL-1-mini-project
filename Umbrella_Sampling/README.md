@@ -42,5 +42,6 @@ The histogram illustrates the distribution of center-of-mass (COM) distances bet
 ## 5. Free Energy Analysis
 - The Weighted Histogram Analysis Method (WHAM) was used to construct the **Potential of Mean Force (PMF) profile**.
 - The **binding free energy (ΔG)** was computed from the PMF profile.
+![PMF](./pmf.png)
 
 This protocol ensures a robust and systematic approach to studying the molecular interactions between the binder protein and PDL1 using umbrella sampling.
