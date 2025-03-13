@@ -19,7 +19,7 @@ This protocol describes the steps to perform Umbrella Sampling to study the bind
 - A steered MD simulation was performed to separate the binder from the PDL1 protein.
 - The center of mass (COM) of two groups of atoms (R1 and R2) was calculated.
 - The X-axis component of the COM distance was used as the reaction coordinate.
-- A moving harmonic restraint was applied, starting from an initial separation of **0.3 Å** and increasing to **6.5 Å** over **250,000 simulation steps**.
+- A moving harmonic restraint was applied, starting from an initial COM distance up to **6.5 Å** over **250,000 simulation steps**.
 - The force constant was ramped from **0.0 to 250 kcal/mol/Å²**.
 
 ## 3. Extraction of Umbrella Windows
