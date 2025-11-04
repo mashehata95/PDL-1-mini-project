@@ -43,7 +43,7 @@ def EnergyMinimization():
 
   # Optimizing Protein Coordinates in the Simulation Box
   print("\t- Optimizing receptor coordinates along the x-axis..")
-  protein_index = [atom.index for atom in pdb.topology.atoms() if atom.name in ["CA","Na+","Cl-"]] 
+  protein_index = [atom.index for atom in pdb.topology.atoms() if atom.name in ["CA","Na+","Cl-", "HOH", "WAT", "SOL"]] 
   positions = simulation.context.getState(getPositions=True).getPositions()
   positions = np.array(positions / angstroms)
   positions[protein_index] -= [37, 0, 0]
